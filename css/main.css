@@ -1,10 +1,6 @@
 /* HTML Selectors */
-article {
-    margin: 10px;
-}
-
 body {
-    font-family: 'Kalam', cursive;
+    font-family: 'Azeret Mono', monospace;
     font-size: 1rem;    
     line-height: 2rem;
     margin:auto;
@@ -24,32 +20,18 @@ header, footer{
     color: white;
     border: black solid 2px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    
 }
 
 footer a {
     color: white;
 }
 
-img {
-    
-}
-
-label {
-    display: inline-block;
-    min-width: 120px;
-    text-align: right;
-}
 
 main {
     text-align: center;
 }
 
-nav {
-    background-color: black;
-    color: white;
-}
 
 ul {
     display: flex;
@@ -73,13 +55,12 @@ ul li a {
 
 }
 ul li a:hover {
-    background-color: #efefef;
-    color: black;
+    background-color: #b1a6a676;
+    color: rgb(145, 39, 202);
+    font-size: larger;
 }
 
-section {
-    
-}
+
 
 
 /* Class Selectors */
@@ -97,40 +78,25 @@ section {
     margin-left: 2rem;
     
 }
+
 .profile_image {
     width: 200px;
     height: auto;
-    float: right;  
-    box-shadow:3px 3px black;
-    border: 2px solid black;
-    margin-right: 30px;
+    
+    
 }
 
 
 
 /* Media Queries */
-@media only screen and (min-width: 32.5em) {
-    nav ul {
-        flex-direction: row;
-    }
-    
-    nav ul li:first-child {
-        display: none;
-    }
 
-    nav ul li {
-        display: inline;
-        margin: 0 10px;
-    }
+@media (min-width: 32.5em) {
 
-    #people {
-        grid-template-columns: 1fr 1fr;
-    }
+    .profile_image {
+    width: 200px;
+    height: auto;
+    float: right; 
+    margin-right: 1em; 
     
 }
-
-@media only screen and (min-width: 64em) {
-    #people {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
 }
