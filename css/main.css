@@ -60,6 +60,42 @@ ul li a:hover {
     font-size: larger;
 }
 
+main {
+	
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+main section h2 {
+	color: #ffffff;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: rgba(170, 21, 21, 0.574);
+}
+
+main section:nth-child(2) {
+	display: block;
+	margin: 0.5rem;
+}
+
+
+main section picture img {
+		width: 80%;
+		height: auto;
+		border: 1px solid #bbb;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+	}
+
+
 
 
 
@@ -86,6 +122,14 @@ ul li a:hover {
     
 }
 
+.colimage {
+	box-shadow: 0 0 30px #333;
+}
 
+.dp_inersection {
+    background-color:white;
+    padding:1em;
+    text-align: left;
+}
 
 
