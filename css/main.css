@@ -88,15 +88,4 @@ ul li a:hover {
 
 
 
-/* Media Queries */
 
-@media (min-width: 32.5em) {
-
-    .profile_image {
-    width: 200px;
-    height: auto;
-    float: right; 
-    margin-right: 1em; 
-    
-}
-}
