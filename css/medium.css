@@ -36,6 +36,17 @@
 		height: auto;
 		border: 1px solid #bbb;
 	}
+
+	/* Lesson 2 */
+	nav ul { display: flex; }
+	nav ul li { flex: 1 1 auto; }
+
+	nav a {
+		font-size: 1rem;
+	}
+
+	
+	/* Lesson 2 */
 }
 
 /* Desktop Views ****************************/
