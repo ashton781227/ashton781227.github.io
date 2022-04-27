@@ -32,32 +32,6 @@ main {
     text-align: center;
 }
 
-nav {
-	background-color: #906ef6e9;
-	margin: 0 auto;
-	max-width: 780px;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-}
-nav ul {
-    display: block;
-    flex-direction: row;
-	list-style-type: none;
-	overflow: hidden;
-}
-nav ul li a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 0.75rem;
-	text-decoration: none;
-	font-size: 0.95rem;
-	
-	transition: 0.5s;
-}
-
-
-
-
 
 ul {
     display: flex;
@@ -85,6 +59,29 @@ ul li a:hover {
     background-color: #b1a6a676;
     color: rgb(145, 39, 202);
     font-size: larger;
+}
+
+nav {
+	background-color: #906ef6e9;
+	margin: 0 auto;
+	max-width: 780px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+nav ul {
+    display: block;
+    flex-direction: row;
+	list-style-type: none;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	
+	transition: 0.5s;
 }
 
 nav ul li a:hover {
