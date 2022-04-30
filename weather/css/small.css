@@ -1,0 +1,162 @@
+body {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1rem;    
+    line-height: 2rem;
+    margin:auto;
+    padding: 0;
+    color: black;
+}
+
+h2,h3{
+    color:black;
+}
+div {
+    margin: 10px;
+    text-align: center;
+}
+
+header, footer{
+    background-color: #d3c8df;
+    padding: 20px;
+    margin: 0;
+    color: black;
+    text-align: center;
+    width:100%;
+    min-width: 600px;
+    
+    
+}
+
+header{
+    display: grid;
+    grid-template-columns:16rem  1fr;
+}
+
+footer a {
+    color: white;
+}
+
+
+main {
+    text-align: center;
+}
+
+
+nav {
+	background-color: #906ef6e9;
+	margin: 0 auto;
+	
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    
+    
+    
+}
+
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: 1.5rem;
+}
+
+.navigation a.ham::before {
+	content: "☰ ";
+}
+
+
+.navigation a:hover {
+	color: white;
+	background-color: #906ef6e9;
+}
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: "㊂ ";
+}
+
+main {
+	
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+	background-color: rgba(255, 255, 255, 0.574);
+}
+
+main section:nth-child(2) {
+	display: block;
+	margin: 0.5rem;
+}
+
+
+main section picture img {
+		width: 80%;
+		height: auto;
+		border: 1px solid #bbb;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+	}
+
+.content {
+
+    margin-left: 3.5rem;
+    
+}
+
+.contentdemo{
+    
+    border: 10px solid #bbb;
+    border-style: dashed;
+}
+.content ul{
+
+    margin-left: 2rem;
+    
+}
+
+.weather_logo{
+    max-width: 250px;
+}
+
+.site_heading{
+    text-align: left;
+    margin: auto;
+    
+}
+
+.site_motto{
+    font-size: 0.6em;
+}
+
+@media (min-width: 32.5em) {
+
+
+}
