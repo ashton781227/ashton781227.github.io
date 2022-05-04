@@ -148,7 +148,6 @@ main {
 
 main section {
 	margin: 0.5rem;
-	border: 1px solid #bbb;
 	padding: 0 1rem;
 	background-color: rgba(255, 255, 255, 0.574);
     max-width:max-content;
