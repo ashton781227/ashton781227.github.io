@@ -15,6 +15,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="addbanner">
+    <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+  </div>
   <header>
     <img src="/images/WeatherTogether.png" alt="Image of weather icons" class="weather_logo">
     <h1 class="site_heading">Weather Together<br><span class="site_motto">Where the weather brings us together</span></h1>
@@ -26,7 +29,7 @@
         <ul class="navigation">
             <li><a class="ham" >Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="/weather/preston.html">Preston</a></li>
+            <li><a href="/weather/preston.html" class="active">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -38,52 +41,106 @@
 
     <main>
     <section class="content">
+        
         <h2>Preston Idaho</h2>
-      
         <br>
-        <div class="contentdemo">
-          <h2>Weather Summary</h2>
-          <p>
-            Temperature: 
-          </p>
+        <div class="firstsection">
+            <img class="prestonhomeimage" src="/weather/images/prestonhomeimage.jpg" alt="Picture of mountain side">
+        
+            <br>
+            <div class="weathersummary">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span class="summarytext">Rainy</span></p>
+                <p>High: <span class="summarytext">76°F</span></p>
+                <p>Wind Speed: <span class="summarytext">2.5mph</span></p>
+                <p>Humidity: <span class="summarytext">57%</span></p>
+            </div>
         </div>
+        <br>
+        
       
-      <br>
-      
-        <div class="contentdemo">
+        <div class="forecast">
           <h2>7 Day Forecast</h2>
-          <p>Day 1</p>
-          <p>Day 2</p>
-          <p>Day 3</p>
-          <p>Day 4</p>
-          <p>Day 5</p>
-          <p>Day 6</p>
-          <p>Day 7</p>
+          <div class="flex">
+            <div class="flex-col">
+                <span class="col-head">Monday</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
+                <span class="data">76°F</span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Tuesday</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
+                <span class="data">77°F</span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Wednesday</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" alt="Partly Cloudy">
+                <span class="data">79°F</span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Thursday</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
+                <span class="data">78°F</span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Friday</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" alt="Partly Cloudy">
+                <span class="data">70°F</span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Saturday</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/1163/1163657.png" alt="Rain">
+                <span class="data">71°F</span>
+            </div>
+            <div class="flex-col">
+                <span class="col-head">Sunday</span>
+                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
+                <span class="data">70°F</span>
+            </div>
+        </div>
         </div>
         <br>
       
-      <div class="contentdemo">
+      <div class="article">
         <article>
-          <h2>Article Title</h2>
+          <h2>Try A South African BBQ</h2>
+          <img src="/weather/images/braaiarticle.jpg" alt="Men standing around a BBQ.">
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod,
-            incidunt. Perferendis maxime et enim quas expedita nulla dolorem
-            illum minima autem, earum repudiandae soluta delectus, nostrum sit
-            exercitationem hic quos.
+            In South Africa, on a Friday, Saturday and Sunday tradition across all cultures 
+            and age groups in the diverse country is for friends, family and neighbors to have a BBQ. 
+            Traditionally anything from chicken, chops, steak and their famous boerawors (a kind of sausage) is 
+            cooked on a wood, charcoal or gas fire. This is what is know as a Braai. 
+            Friends and family get together, talk, share a meal. A common side with a Braai is a dish made 
+            from corn meal called Pap, which is usually topped with a tomato and onion gravy locally known as "Chakalaka". 
+
           </p>
+          <p>A Braai is not specific to one group or race or culture, but is truly cross cultural, with each culture 
+              having something from anothers at a Braai. Its a time for family, a time for friends, a time to relax and most 
+            importantly a time to eat good food. This weekend, why don't you invite soke family and friends over and have yourselves a "Lekker Braai".</p>
         </article>
       </div>
       <br>
-      <div class="contentdemo">
-        <h2>Contact</h2>
-        <p></p>
+      <div class="contactus">
+        <div>
+        <h2>Contact Us</h2>
         <p>
-           Phone
+           ☎Phone: +1 (906) 098 4567
         </p>
-          <br>
         <p>
-          email@emailaddress.com
+          ✉Email: mail@emailaddress.com
         </p>
+        <p>📍Address: 887 Pecant drive, Idaho.</p>
+        <a href="https://facebook.com" target="_blank" class="social">
+                <img src="https://cdn-icons.flaticon.com/png/128/4494/premium/4494475.png?token=exp=1651593634~hmac=3746bf84ae2d3f66df3c72319d4389f2" alt="Facebook icon">
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social">
+                <img src="https://cdn-icons.flaticon.com/png/128/4494/premium/4494477.png?token=exp=1651593634~hmac=a668e7f32b8299499e1686a6a091bcad" alt="Twitter icon" >
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social">
+                <img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram icon" >
+            </a>
+        </div>
+        <img src="/weather/images/prestonmap.png" alt="Men standing around a BBQ.">
         </div>
         
     </section>
