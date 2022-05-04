@@ -312,7 +312,9 @@ main section picture img {
 	text-align: center;
 }
 
-
+.forecast {
+    display:block;
+}
 /* Flex forecast end */
 
 
