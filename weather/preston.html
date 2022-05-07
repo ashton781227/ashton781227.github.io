@@ -45,14 +45,20 @@
         <h2>Preston Idaho</h2>
         <br>
         <div class="firstsection">
-            <img class="prestonhomeimage" src="/weather/images/prestonhomeimage.jpg" alt="Picture of mountain side">
+          <picture>
+            <source srcset="/weather/images/prestonhomeimage-480w.jpeg" media="(min-width: 321px) and (max-width: 799px)">
+              <source srcset="/weather/images/prestonhomeimage-1080w.jpeg" media="(min-width: 800px)">
+            <img class="prestonhomeimage" 
+             src="/weather/images/prestonhomeimage-320w.jpeg" alt="Picture of mountain side">
+          </picture>
         
             <br>
             <div class="weathersummary">
                 <h2>Weather Summary</h2>
                 <p>Currently: <span class="summarytext">Rainy</span></p>
-                <p>High: <span class="summarytext">76°F</span></p>
-                <p>Wind Speed: <span class="summarytext">2.5mph</span></p>
+                <p>Temperature: <span class="summarytext" id="temperature">45</span><span class="summarytext">°F</span></p>
+                <p>Wind Chill: <span class="summarytext" id="windchill">76°F</span></p>
+                <p>Wind Speed: <span class="summarytext" id="windspeed">3.5</span><span class="summarytext">mph</span></p></p>
                 <p>Humidity: <span class="summarytext">57%</span></p>
             </div>
         </div>
@@ -153,6 +159,7 @@
 
     </footer>
   <script src="/weather/js/main.js"></script>
+  <script src="/weather/js/windchill.js"></script>
  
 </body>
 </html>  
