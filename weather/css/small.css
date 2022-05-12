@@ -324,7 +324,7 @@ main section picture img {
 
 .progressive picture:nth-child(2) {
 	display: block;
-	margin: 0.5rem;
+	
 }
 
 .progressive img[data-src] {
@@ -337,6 +337,9 @@ main section picture img {
     margin: auto;
   filter: blur(0em);
   transition: filter 0.5s;
+}
+.progressive p{
+	display: none;
 }
 
 @media (min-width: 32.5em) {

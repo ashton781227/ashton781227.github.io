@@ -17,4 +17,9 @@
 	.progressive picture:nth-child(3) {
 		grid-column: span 1;
 	}
+
+    .progressive p{
+	    display: block;
+}
+.progressive :hover {box-shadow: 0 0 50px #333;}
 }   
