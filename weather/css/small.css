@@ -317,7 +317,27 @@ main section picture img {
 }
 /* Flex forecast end */
 
+.progressive {
+	display: grid;
+	grid-template-columns: 1fr;
+}
 
+.progressive picture:nth-child(2) {
+	display: block;
+	margin: 0.5rem;
+}
+
+.progressive img[data-src] {
+  filter: blur(0.2em);
+}
+
+.progressive img {
+    
+    align-items: center;
+    margin: auto;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
 
 @media (min-width: 32.5em) {
 

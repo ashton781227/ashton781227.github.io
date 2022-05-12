@@ -7,4 +7,14 @@
 	
     background-color: #906ef65d;
     }
+
+
+    .progressive {
+		grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 1.5rem;
+	}
+
+	.progressive picture:nth-child(3) {
+		grid-column: span 1;
+	}
 }   

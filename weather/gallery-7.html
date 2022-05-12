@@ -41,115 +41,19 @@
 
     <main>
     <section class="content">
-        
-        <h2>Gallery</h2>
-        <br>
-        <div class="firstsection">
-          <picture>
-            <source srcset="/weather/images/prestonhomeimage-480w.jpeg" media="(min-width: 321px) and (max-width: 799px)">
-              <source srcset="/weather/images/prestonhomeimage-1080w.jpeg" media="(min-width: 800px)">
-            <img class="prestonhomeimage" 
-             src="/weather/images/prestonhomeimage-320w.jpeg" alt="Picture of mountain side">
-          </picture>
-        
-            <br>
-            <div class="weathersummary">
-                <h2>Weather Summary</h2>
-                <p>Currently: <span class="summarytext">Rainy</span></p>
-                <p>Temperature: <span class="summarytext" id="temperature">45</span><span class="summarytext">°F</span></p>
-                <p>Wind Chill: <span class="summarytext" id="windchill">76°F</span></p>
-                <p>Wind Speed: <span class="summarytext" id="windspeed">3.5</span><span class="summarytext">mph</span></p></p>
-                <p>Humidity: <span class="summarytext">57%</span></p>
-            </div>
-        </div>
-        <br>
-        
-      
-        <div class="forecast">
-          <h2>7 Day Forecast</h2>
-          <div class="flex">
-            <div class="flex-col">
-                <span class="col-head">Monday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
-                <span class="data">76°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Tuesday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
-                <span class="data">77°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Wednesday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" alt="Partly Cloudy">
-                <span class="data">79°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Thursday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
-                <span class="data">78°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Friday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" alt="Partly Cloudy">
-                <span class="data">70°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Saturday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/1163/1163657.png" alt="Rain">
-                <span class="data">71°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Sunday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
-                <span class="data">70°F</span>
-            </div>
-        </div>
-        </div>
-        <br>
-      
-      <div class="article">
-        <article>
-          <h2>Try A South African BBQ</h2>
-          <img src="/weather/images/braaiarticle.jpg" alt="Men standing around a BBQ.">
-          <p>
-            In South Africa, on a Friday, Saturday and Sunday tradition across all cultures 
-            and age groups in the diverse country is for friends, family and neighbors to have a BBQ. 
-            Traditionally anything from chicken, chops, steak and their famous boerawors (a kind of sausage) is 
-            cooked on a wood, charcoal or gas fire. This is what is know as a Braai. 
-            Friends and family get together, talk, share a meal. A common side with a Braai is a dish made 
-            from corn meal called Pap, which is usually topped with a tomato and onion gravy locally known as "Chakalaka". 
-
-          </p>
-          <p>A Braai is not specific to one group or race or culture, but is truly cross cultural, with each culture 
-              having something from anothers at a Braai. Its a time for family, a time for friends, a time to relax and most 
-            importantly a time to eat good food. This weekend, why don't you invite soke family and friends over and have yourselves a "Lekker Braai".</p>
-        </article>
-      </div>
-      <br>
-      <div class="contactus">
-        <div>
-        <h2>Contact Us</h2>
-        <p>
-           ☎Phone: +1 (906) 098 4567
-        </p>
-        <p>
-          ✉Email: mail@emailaddress.com
-        </p>
-        <p>📍Address: 887 Pecant drive, Idaho.</p>
-        <a href="https://facebook.com" target="_blank" class="social">
-                <img src="/weather/images/facebook.png" alt="Facebook icon">
-            </a>
-            <a href="https://twitter.com" target="_blank" class="social">
-                <img src="/weather/images/twitter.png" alt="Twitter icon" >
-            </a>
-            <a href="https://instagram.com" target="_blank" class="social">
-                <img src="/weather/images/instagram.png" alt="Instagram icon" >
-            </a>
-        </div>
-        <img src="/weather/images/prestonmap.png" alt="Men standing around a BBQ.">
-        </div>
-        
-    </section>
+    <h1> W04 Activity: Progressive Loading of Images</h1>
+    <hr>
+    <div class="progressive">
+    <picture><img src='/lesson-4/images/Placeholder.jpg' data-src='https://p-hold.com/300/400' alt='NAME'></picture>
+    <picture><img src='/lesson-4/images/Placeholder.jpg' data-src='https://p-hold.com/300/400' alt='NAME'></picture>
+    <picture><img src='/lesson-4/images/Placeholder.jpg' data-src='https://p-hold.com/300/400' alt='NAME'></picture>
+    <picture><img src='/lesson-4/images/Placeholder.jpg' data-src='https://p-hold.com/300/400' alt='NAME'></picture>
+    <picture><img src='/lesson-4/images/Placeholder.jpg' data-src='https://p-hold.com/300/400' alt='NAME'></picture>
+    <picture><img src='/lesson-4/images/Placeholder.jpg' data-src='https://p-hold.com/300/400' alt='NAME'></picture>
+    </div>
+    
+    
+  </section>
     </main>
     <footer>
         <div>
@@ -160,6 +64,7 @@
     </footer>
   <script src="/weather/js/main.js"></script>
   <script src="/weather/js/windchill.js"></script>
+  <script src="/weather/js/gallery.js"></script>
  
 </body>
 </html>  

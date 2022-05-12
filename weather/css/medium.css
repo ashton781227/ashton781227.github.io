@@ -72,4 +72,9 @@ nav{
     height:42px;
 }
 
+.progressive {
+		grid-template-columns: 1fr 1fr;
+        margin: 0 1.5rem;
+	}
+
 }
