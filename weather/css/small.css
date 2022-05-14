@@ -342,6 +342,50 @@ main section picture img {
 	display: none;
 }
 
+.form{
+    line-height: 10px;
+    text-align: left;
+}
+
+.formsection {
+    
+    text-align: left;
+}
+
+.form h3 {
+
+    line-height: 20px;
+    margin-top: 40px;
+}
+
+.formpage{
+    align-items: center;
+    margin: auto;
+   padding:0;
+}
+
+.btn-lg{
+    background-color:#906ef6;
+    color: #fff;
+    border:#5027cd;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom: 10px;
+}
+
+.btn-lg:hover {
+    background-color:#5027cd;
+}
+
+.formpage{
+    margin-top: 25px;
+}
+
+textarea{
+    margin-top: 10px;
+    width:100% ;
+}
+
 @media (min-width: 32.5em) {
 
 

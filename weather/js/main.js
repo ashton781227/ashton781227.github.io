@@ -19,3 +19,9 @@ let weekday = todaysDate.getDay();
 if (weekday == 6 ) {
     addbanner.style.display = "block";
 }
+
+
+
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
