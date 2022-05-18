@@ -1,0 +1,144 @@
+/* HTML Selectors */
+body {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1rem;    
+    line-height: 2rem;
+    margin:auto;
+    padding: 0;
+}
+
+div {
+    margin: 10px;
+    text-align: center;
+}
+
+header, footer{
+    background-color: rgba(92, 53, 33, 0.889);
+    padding: 20px;
+    margin: 1rem;
+    border-radius: 10px;
+    color: white;
+    border: black solid 2px;
+    text-align: center;
+    
+}
+
+footer a {
+    color: white;
+}
+
+
+main {
+    text-align: center;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+ ul li {
+    
+    margin: 10px;
+}
+
+ul li a {
+    color: blue;
+    text-decoration: underline;
+
+}
+ul li a:hover {
+    background-color: #b1a6a676;
+    color: rgb(145, 39, 202);
+    font-size: larger;
+}
+
+nav {
+	background-color: #906ef6e9;
+	margin: 0 auto;
+	max-width: 780px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+nav ul {
+    display: block;
+    flex-direction: row;
+	list-style-type: none;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	
+	transition: 0.5s;
+}
+
+nav ul li a:hover {
+			background-color: white;
+			font-size: larger;
+			color: #906ef6e9;
+		--d: 75%;
+}
+
+
+
+
+
+table, th, td {
+  border:1px solid black;
+  margin-right: 3.5rem;
+  padding: 20px;
+  
+}
+
+
+
+.body_background {
+    background-color:white;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.cards section {
+    border: 10px solid black;
+}
+
+.cards section:nth-child(2) {
+	display: block;
+	
+}
+
+
+
+
+@media only screen and (min-width: 45.5em) {
+    .cards {
+		grid-template-columns: 1fr 1fr;
+        margin: 0 1.5rem;
+	}
+}
+
+
+@media only screen and (min-width: 70em) {
+
+
+
+    .cards {
+		grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 1.5rem;
+	}
+}
