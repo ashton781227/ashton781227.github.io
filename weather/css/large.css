@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 70em) {
 
     .weathersummary{
     position: absolute;
@@ -20,6 +20,16 @@
 
     .progressive p{
 	    display: block;
+}
+
+.cards {
+		grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 1.5rem;
+		
+	}
+	
+.cards img{
+	width:100%;
 }
 .progressive :hover {box-shadow: 0 0 50px #333;}
 }   

@@ -28,8 +28,8 @@
     <nav>
         <ul class="navigation">
             <li><a class="ham" >Menu</a></li>
-            <li><a href="/lesson-5/index.html">Home</a></li>
-            <li><a href="/weather/preston.html" class="active">Preston</a></li>
+            <li><a href="/lesson-5/index.html" class="active">Home</a></li>
+            <li><a href="/weather/preston.html" >Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="/weather/stormcenter.html">Storm Center</a></li>
@@ -42,73 +42,32 @@
     <main>
     <section class="content">
         
-        <h2>Preston Idaho</h2>
+       
         <br>
         <div class="firstsection">
           <picture>
-            <source srcset="/weather/images/prestonhomeimage-480w.jpeg" media="(min-width: 321px) and (max-width: 799px)">
-              <source srcset="/weather/images/prestonhomeimage-1080w.jpeg" media="(min-width: 800px)">
-            <img class="prestonhomeimage" 
-             src="/weather/images/prestonhomeimage-320w.jpeg" alt="Picture of mountain side">
+            
+            <img class="homeimage" 
+             src="/weather/images/homepage.jpg" alt="Picture of mountain and hiker">
           </picture>
         
-            <br>
-            <div class="weathersummary">
-                <h2>Weather Summary</h2>
-                <p>Currently: <span class="summarytext">Rainy</span></p>
-                <p>Temperature: <span class="summarytext" id="temperature">45</span><span class="summarytext">°F</span></p>
-                <p>Wind Chill: <span class="summarytext" id="windchill">76°F</span></p>
-                <p>Wind Speed: <span class="summarytext" id="windspeed">3.5</span><span class="summarytext">mph</span></p></p>
-                <p>Humidity: <span class="summarytext">57%</span></p>
-            </div>
+            
         </div>
         <br>
         
       
-        <div class="forecast">
-          <h2>7 Day Forecast</h2>
-          <div class="flex">
-            <div class="flex-col">
-                <span class="col-head">Monday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
-                <span class="data">76°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Tuesday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
-                <span class="data">77°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Wednesday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" alt="Partly Cloudy">
-                <span class="data">79°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Thursday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
-                <span class="data">78°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Friday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/1163/1163661.png" alt="Partly Cloudy">
-                <span class="data">70°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Saturday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/1163/1163657.png" alt="Rain">
-                <span class="data">71°F</span>
-            </div>
-            <div class="flex-col">
-                <span class="col-head">Sunday</span>
-                <img src="https://cdn-icons-png.flaticon.com/128/869/869869.png" alt="Sunshine">
-                <span class="data">70°F</span>
-            </div>
+        <div class="towns">
+          <h2>TOWNS</h2>
+          <div class="cards">
+          </div>
+    
         </div>
         </div>
         <br>
       
       <div class="article">
         <article>
+          <h1>Town Article of the Week:</h1>
           <h2>Try A South African BBQ</h2>
           <img src="/weather/images/braaiarticle.jpg" alt="Men standing around a BBQ.">
           <p>
@@ -126,27 +85,29 @@
         </article>
       </div>
       <br>
-      <div class="contactus">
+      <div class="">
+        
         <div>
-        <h2>Contact Us</h2>
-        <p>
+        <h2 class="contactus social">Contact Us</h2>
+        <p class="contactus social">
            ☎Phone: +1 (906) 098 4567
         </p>
-        <p>
+        <p class="contactus social">
           ✉Email: mail@emailaddress.com
         </p>
-        <p>📍Address: 887 Pecant drive, Idaho.</p>
-        <a href="https://facebook.com" target="_blank" class="social">
+        <p class="contactus social">📍Address: 887 Pecant drive, Idaho.</p>
+        <a href="https://facebook.com" target="_blank" class="contactus social">
                 <img src="/weather/images/facebook.png" alt="Facebook icon">
             </a>
-            <a href="https://twitter.com" target="_blank" class="social">
+            <a href="https://twitter.com" target="_blank" class="contactus social">
                 <img src="/weather/images/twitter.png" alt="Twitter icon" >
             </a>
-            <a href="https://instagram.com" target="_blank" class="social">
+            <a href="https://instagram.com" target="_blank" class=" contactus social">
                 <img src="/weather/images/instagram.png" alt="Instagram icon" >
             </a>
         </div>
-        <img src="/weather/images/prestonmap.png" alt="Men standing around a BBQ.">
+        
+        
         </div>
         
     </section>

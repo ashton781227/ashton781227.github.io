@@ -232,6 +232,12 @@ main section picture img {
     
 }
 
+.homeimage{
+    width:100%;
+    
+    
+}
+
 .article{
     text-align: centre;
 }
@@ -384,6 +390,32 @@ main section picture img {
 textarea{
     margin-top: 10px;
     width:100% ;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr;
+    padding: 50px;
+}
+
+.cards div {
+    border: 10px solid black;
+}
+
+.cards section:nth-child(2) {
+	display: block;
+	
+}
+
+.cards h2{
+    font-size: 2rem;
+    padding:0;
+    margin-bottom:0;
+}
+
+.cards p{
+    font-size: 0.7rem;
+    margin-top:0;
 }
 
 @media (min-width: 32.5em) {

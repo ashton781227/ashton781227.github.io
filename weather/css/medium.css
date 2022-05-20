@@ -77,4 +77,10 @@ nav{
         margin: 0 1.5rem;
 	}
 
+.cards {
+		grid-template-columns: 1fr 1fr;
+        margin: 0 1.5rem;
+        padding: 50px;
+	}
+
 }
