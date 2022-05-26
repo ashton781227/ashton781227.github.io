@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Ashton Pieterse">
+  <meta name="description" content="Weather together page for Ashton Pieterse in WDD 230: Web Frontend Development at brigham Young University - Idaho">
+  <title>Preston Idaho</title>
+  
+  <link rel="stylesheet" href="/lesson-11/css/small.css">
+  <link rel="stylesheet" href="/lesson-11/css/medium.css">
+  <link rel="stylesheet" href="/lesson-11/css/large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="addbanner">
+    <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+  </div>
+  <header>
+    <img src="/images/WeatherTogether.png" alt="Image of weather icons" class="weather_logo">
+    <h1 class="site_heading">Weather Together<br><span class="site_motto">Where the weather brings us together</span></h1>
+    
+    
+    
+  </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" >Menu</a></li>
+            <li><a href="/lesson-11/index.html">Home</a></li>
+            <li><a href="/lesson-11/preston.html" >Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/lesson-11/stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="/lesson-11/gallery.html">Gallery</a></li>
+      
+        </ul>
+    </nav>
+
+
+    <main>
+    <section class="formpage">
+    <h1>Storm Centre</h1>
+    
+        <form method="get" action="thanks.html">
+            <div class="form">
+                <h3>Contact Details</h3>
+
+                <div class="formsection">
+                    <label for="name">Full Name*:</label>
+                    <input type="text" id="name" name="name" minlength="5" maxlength="50" size="20" required="" pattern="[A-Z][A-Za-z' -]+">
+                </div>
+                <br>
+                <div class="formsection">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@domain.com" size="20">
+                </div>
+                <br>
+                <div class="formsection">
+                    <label for="phone">Phone*:</label>
+                    <input type="tel" id="phone" name="tel" required="" minlength="10" size="20">
+                </div>
+                <br>
+                <div class="formsection">
+                    <label for="zip">ZIP*:</label>
+                    <input type="text" id="zip" name="zip" required="" pattern="[0-9]*">
+                </div>
+
+                <h3>Storm Information</h3>
+                <div class="formsection">
+                    <label for="date">Storm Date:</label>
+                    <input type="date" id="date" name="date" size="5">
+                </div>
+                <br>
+                <div class="formsection">
+                    <label for="type">Storm Type:</label>
+                    <input list="storm-type" id="type" name="type">
+                    <datalist id="storm-type">
+                        <option value="Flash Flood">
+                        </option><option value="Hail">
+                        </option><option value="Hurricane">
+                        </option><option value="Thunderstorm">
+                        </option><option value="Tornado">
+                        </option><option value="Other">
+                    </option></datalist>
+                </div>
+                <br>
+                <div>
+                    <label for="rating">Storm Severity (1 to 10):</label>
+                    <input type="range" id="rating" value="1" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"">
+                    <span id="ratingvalue">1</span>
+                </div>
+                <br>
+                <div class="formsection">
+                    <label for="region">Storm Region:</label>
+                    <select id="region">
+                        <option selected="" disabled="">Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <h3>Are you in danger?</h3>
+                </div>
+                <div class="radio">
+                    <div class="radio.button">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="danger" value="yes" checked="">
+                    </div>
+
+                    <div class="radio.button">
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="maybe" name="danger" value="maybe">
+                    </div>
+
+                    <div class="radio.button">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="danger" value="no">
+                    </div>
+                </div>
+                <br>
+                <div class="formsection">
+                    <label for="comments">Additional Comments or Details (max 500 characters):</label>
+                    <br>
+                    <textarea  name="comments" maxlength="750"></textarea>
+                </div>
+            </div>
+            <br>
+            <input class="btn-lg" type="submit" value="Report Storm">
+        </form>
+    
+    
+  </section>
+    </main>
+    <footer>
+        <div>
+        &copy;<span id="year"></span> | Ashton Pieterse | South Africa | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </div>
+        <div class="last_updated">Last Updated: <span  id="last_update"></span></div>
+
+    </footer>
+  <script src="/lesson-11/js/main.js"></script>
+  
+ 
+</body>
+</html>  

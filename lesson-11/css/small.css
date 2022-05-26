@@ -1,0 +1,429 @@
+html {
+    width: 100%;
+    
+    display: table;
+}
+
+body {
+    width: 100%;
+    display: table-cell;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 1rem;    
+    line-height: 2rem;
+    
+    padding: 0;
+    color: black;
+    
+    
+    
+    
+}
+
+h2,h3{
+    color:black;
+}
+
+
+header, footer{
+    background-color: #d3c8df;
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-align: center;
+    width:100%;
+    min-width: 600px;
+    
+    
+    
+    
+}
+
+header{
+
+    display: grid;
+    grid-template-columns:16rem  1fr;
+    width:100%;
+    min-width: 600px;
+    
+}
+
+footer a {
+    color: white;
+}
+
+
+main {
+    text-align: center;
+}
+
+
+nav {
+	background-color: #906ef6e9;
+	
+    width:100%;
+    min-width: 600px;
+    
+   
+	
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    
+    
+    
+    
+}
+
+
+.navigation {
+	list-style: none;
+	padding: 0;
+    margin: 0;
+    width:100%;
+    
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+
+
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: 1.5rem;
+}
+
+.navigation a.ham::before {
+	content: "☰ ";
+}
+
+
+.navigation a:hover {
+	color: white;
+	background-color: #906ef6e9;
+    font-size: 1.7rem;
+}
+
+a.active {
+    text-decoration: underline;
+    
+}
+
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: "㊂ ";
+}
+
+main {
+	
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+    max-width:max-content;
+    width:100%;
+    min-width: 600px;
+}
+
+
+
+main section {
+	margin: 0.5rem;
+	padding: 0 1rem;
+	background-color: rgba(255, 255, 255, 0.574);
+    max-width:max-content;
+}
+
+main section:nth-child(2) {
+	display: block;
+	margin: 0.5rem;
+}
+
+
+main section picture img {
+		width: 80%;
+		height: auto;
+		border: 1px solid #bbb;
+        align-items: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+	}
+
+.content {
+
+    margin-left: 3.5rem;
+    max-width:max-content;
+    
+}
+
+.contentdemo{
+    
+    border: 10px solid #bbb;
+    border-style: dashed;
+}
+.content ul{
+
+    margin-left: 2rem;
+    
+}
+
+.weather_logo{
+    max-width: 250px;
+}
+
+.site_heading{
+    text-align: left;
+    margin: auto;
+    
+}
+
+.firstsection{
+	margin: 0 auto;
+	position: relative;
+}
+
+.weathersummary{
+    background-color: #906ef6;
+	border: 1px solid #000;
+	padding: 1.5rem;
+    padding-top: 0.1rem;
+	box-shadow: 0 0 30px #333;
+	
+    color:white
+    
+    
+}
+
+.weathersummary h2{
+    color:white;
+}
+
+.summarytext{
+    color:white;
+}
+
+.site_motto{
+    font-size: 0.6em;
+}
+
+.prestonhomeimage{
+    width:100%;
+    
+    
+}
+
+.forecastimg{
+    width:80px;
+    padding:0;
+}
+
+.homeimage{
+    width:100%;
+    
+    
+}
+
+.article{
+    text-align: centre;
+}
+
+.article img{
+    width:400px;
+    
+    
+}
+
+.contactus{
+    text-align: left;
+}
+
+.contactus img{
+    width:auto;
+    
+    
+}
+
+.social{
+ display: none;
+ 
+}
+
+.addbanner{
+ display: none;
+ background-color: #906ef6;
+ color:white;
+ width:100%
+ margin:0;
+}
+
+
+/* Flex forecast */
+
+.flex {
+	display: flex;
+	/* flex-direction: row; */
+	/* let us combine row and wrap with flow */
+	flex-flow: row wrap;
+}
+
+.flex-col {
+	flex: 1 1 auto;
+	background-color: #906ef62b;
+}
+.flex-col, .column-col, .grid-col {
+	border-bottom: 1px solid #906ef6;
+	border-left: 1px solid #906ef6;
+	text-align: center;
+}
+.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+	opacity: 0.75;
+	background-color: #5027cd;
+	color: white;
+}
+.flex, .column, .grid {
+	border-right: 1px solid #906ef6;
+}
+
+.col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #906ef6;
+	text-align: center;
+}
+
+.flex-col img {
+	border-radius: 100px;
+	padding: 0.25rem;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.forecast {
+    display:block;
+}
+/* Flex forecast end */
+
+.progressive {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.progressive picture:nth-child(2) {
+	display: block;
+	
+}
+
+.progressive img[data-src] {
+  filter: blur(0.2em);
+}
+
+.progressive img {
+    
+    align-items: center;
+    margin: auto;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+.progressive p{
+	display: none;
+}
+
+.form{
+    line-height: 10px;
+    text-align: left;
+}
+
+.formsection {
+    
+    text-align: left;
+}
+
+.form h3 {
+
+    line-height: 20px;
+    margin-top: 40px;
+}
+
+.formpage{
+    align-items: center;
+    margin: auto;
+   padding:0;
+}
+
+.btn-lg{
+    background-color:#906ef6;
+    color: #fff;
+    border:#5027cd;
+    border-radius:10px;
+    padding:15px;
+    margin-bottom: 10px;
+}
+
+.btn-lg:hover {
+    background-color:#5027cd;
+}
+
+.formpage{
+    margin-top: 25px;
+}
+
+textarea{
+    margin-top: 10px;
+    width:100% ;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: 1fr;
+    padding: 50px;
+}
+
+.cards div {
+    border: 10px solid black;
+}
+
+.cards section:nth-child(2) {
+	display: block;
+	
+}
+
+.cards h2{
+    font-size: 2rem;
+    padding:0;
+    margin-bottom:0;
+}
+
+.cards p{
+    font-size: 0.7rem;
+    margin-top:0;
+}
+
+@media (min-width: 32.5em) {
+
+
+}
