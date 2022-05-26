@@ -28,8 +28,8 @@
     <nav>
         <ul class="navigation">
             <li><a class="ham" >Menu</a></li>
-            <li><a href="/lesson-5/index.html" class="active">Home</a></li>
-            <li><a href="/lesson-10/preston-10.html" >Preston</a></li>
+            <li><a href="/lesson-5/index.html">Home</a></li>
+            <li><a href="/weather/preston-10.html" class="active">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="/weather/stormcenter.html">Storm Center</a></li>
@@ -42,32 +42,39 @@
     <main>
     <section class="content">
         
-       
+        <h2>Preston Idaho</h2>
         <br>
         <div class="firstsection">
           <picture>
-            
-            <img class="homeimage" 
-             src="/weather/images/homepage.jpg" alt="Picture of mountain and hiker">
+            <source srcset="/weather/images/prestonhomeimage-480w.jpeg" media="(min-width: 321px) and (max-width: 799px)">
+              <source srcset="/weather/images/prestonhomeimage-1080w.jpeg" media="(min-width: 800px)">
+            <img class="prestonhomeimage" 
+             src="/weather/images/prestonhomeimage-320w.jpeg" alt="Picture of mountain side">
           </picture>
         
-            
+            <br>
+            <div class="weathersummary">
+                <h2>Weather Summary</h2>
+                <p>Currently: <span class="summarytext" id="weather-description"></span></p>
+                <p>Temperature: <span class="summarytext" id="current-temp"></span><span class="summarytext">°F</span></p>
+                <p>Wind Chill: <span class="summarytext" id="windchill"></span></p>
+                <p>Wind Speed: <span class="summarytext" id="windspeed"></span><span class="summarytext">mph</span></p></p>
+                <p>Humidity: <span class="summarytext" id="humidity">57<span class="summarytext">%</span></span></p>
+            </div>
         </div>
         <br>
         
       
-        <div class="towns">
-          <h2>TOWNS</h2>
-          <div class="cards">
-          </div>
-    
+        <div class="forecast">
+          <h2>5 Day Forecast</h2>
+          <div class="flex" id="forecast">
+           
         </div>
         </div>
         <br>
       
       <div class="article">
         <article>
-          <h1>Town Article of the Week:</h1>
           <h2>Try A South African BBQ</h2>
           <img src="/weather/images/braaiarticle.jpg" alt="Men standing around a BBQ.">
           <p>
@@ -85,29 +92,27 @@
         </article>
       </div>
       <br>
-      <div class="">
-        
+      <div class="contactus">
         <div>
-        <h2 class="contactus social">Contact Us</h2>
-        <p class="contactus social">
+        <h2>Contact Us</h2>
+        <p>
            ☎Phone: +1 (906) 098 4567
         </p>
-        <p class="contactus social">
+        <p>
           ✉Email: mail@emailaddress.com
         </p>
-        <p class="contactus social">📍Address: 887 Pecant drive, Idaho.</p>
-        <a href="https://facebook.com" target="_blank" class="contactus social">
+        <p>📍Address: 887 Pecant drive, Idaho.</p>
+        <a href="https://facebook.com" target="_blank" class="social">
                 <img src="/weather/images/facebook.png" alt="Facebook icon">
             </a>
-            <a href="https://twitter.com" target="_blank" class="contactus social">
+            <a href="https://twitter.com" target="_blank" class="social">
                 <img src="/weather/images/twitter.png" alt="Twitter icon" >
             </a>
-            <a href="https://instagram.com" target="_blank" class=" contactus social">
+            <a href="https://instagram.com" target="_blank" class="social">
                 <img src="/weather/images/instagram.png" alt="Instagram icon" >
             </a>
         </div>
-        
-        
+        <img src="/weather/images/prestonmap.png" alt="Men standing around a BBQ.">
         </div>
         
     </section>
@@ -116,10 +121,13 @@
         <div>
         &copy;<span id="year"></span> | Ashton Pieterse | South Africa | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
         </div>
+        <div>Weather Data: <a href="https://openweathermap.org/">OpenWeather</a></div>
         <div class="last_updated">Last Updated: <span  id="last_update"></span></div>
 
     </footer>
   <script src="/weather/js/main.js"></script>
+  
+  <script src="js/weatherapi.js"></script>
   <script src="/weather/js/windchill.js"></script>
  
 </body>

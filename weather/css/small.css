@@ -232,6 +232,11 @@ main section picture img {
     
 }
 
+.forecastimg{
+    width:80px;
+    padding:0;
+}
+
 .homeimage{
     width:100%;
     
