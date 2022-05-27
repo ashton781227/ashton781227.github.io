@@ -4,7 +4,7 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    
     document.getElementById('current-temp').textContent = jsObject.main.humidity;
     document.getElementById('humidity').textContent = jsObject.main.temp;
     const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
@@ -22,10 +22,10 @@ const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&
 fetch(forcastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    
     
     const forecastList = jsObject.list.filter(item => item.dt_txt.includes('18:00:00'));
-    console.log(forecastList);
+    
     for (let j = 0; j < forecastList.length; j++ ) {
             let card = document.createElement('div');
             card.classList.add('flex-col');
@@ -64,7 +64,7 @@ fetch(townURL)
         return response.json();
       })
       .then(function (jsonObject) {
-        console.table(jsonObject);  // temporary checking for valid response and data parsing
+          // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
 
         const town = towns[0];

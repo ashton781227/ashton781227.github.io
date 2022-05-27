@@ -34,13 +34,13 @@ fetch(requestURL)
         return response.json();
       })
       .then(function (jsonObject) {
-        console.table(jsonObject);  // temporary checking for valid response and data parsing
+          // temporary checking for valid response and data parsing
         const towns = jsonObject['towns'];
 
         const town_options = [6,2,0];
         for (let j = 0; j < town_options.length; j++ ) {
             let i = town_options[j];
-            console.log(i);
+            
             let card = document.createElement('div');
             
             let h2 = document.createElement('h2');
