@@ -244,7 +244,7 @@ main section picture img {
 }
 
 .article{
-    text-align: centre;
+    text-align: center;
 }
 
 .article img{
@@ -372,7 +372,7 @@ main section picture img {
 .formpage{
     align-items: center;
     margin: auto;
-   padding:0;
+    padding: 0;
 }
 
 .btn-lg{
