@@ -60,7 +60,7 @@ fetch(requestURL)
             p4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
             card.appendChild(p4);
             let image = document.createElement('img');
-            image.setAttribute('src', '/weather/images/'+ towns[i].photo);
+            image.setAttribute('src', '/lesson-6/images/'+ towns[i].photo);
             image.setAttribute('alt', towns[i].name  );
             card.appendChild(image);
             
