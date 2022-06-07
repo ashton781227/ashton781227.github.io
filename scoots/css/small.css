@@ -128,7 +128,7 @@ ul {
   padding-bottom: 1em;
 }
 
-#content {
+.content {
   max-width: 960px;
   margin: 0 auto;
 }
@@ -268,7 +268,7 @@ ul {
                     
 .home-button a {
   text-decoration: none;
-  padding-botom:0;
+  padding-bottom:0;
 }
 
 .social {
@@ -498,27 +498,3 @@ ul {
 
 
 
-@media screen and (max-width: 550px) { 
-/* beginning of media query */
-    .home-grid {
-    display: block;
-    }
-    .about-grid {
-    display: block;
-    }
-    .order-grid {
-    display: block;
-    }
-    .contact-us-form {
-      text-align: center;
-      padding-left: 0em;
-  }
-  .home-welcome-paragraph {
-    margin-bottom: 1em;
-  }
-  
-  
-      
-    
-/* end of media query */ 
-} 
