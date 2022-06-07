@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>POPCV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+  <div id="content">
+    <header>
+        <div class="logo-box">
+          <img src="images/scoots.png" alt="SCOOTS Logo">
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" >Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  <main>
+    <div class="banner-box">
+      <img src="images/cozumel.jpg" alt="Picture of a beach at Cozumel.">
+    </div>
+    <p class="home-welcome-paragraph">
+      The best way to tour Cozumel!
+    </p>
+    <div class="order-center">
+    <h2>Reservations</h2>
+    <p>
+      Scoots promotes friendly and easy to rent services of motor scooters, jeeps, and side-by-sides ATVs.When you make a reservation with us you agree to the following:
+    </p>
+    <ul class="reservations">
+      <li>A $50 security deposit is required to confirm reservations.</li>
+      <li>A valid drivers license is required in hand at time of rental.</li>
+      <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+      <li>Fuel charge not included.</li>
+      <li>Unlimited mileage.</li>
+      <li>Liability insurance is free of charge.</li>
+      <li>Reservations rate requires 24 hour prior notification.</li>
+      <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+      <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+      <li>Rentals may be returned to either location.</li>
+    </ul>
+    </div>
+    <br>
+    <div class="order-grid">
+      <div class="order-left-form">
+        <form method="get" action="thanks.html">
+          <ul>
+            <li class="formsection">
+              <label for="name">Full Name:</label><br>
+              <input type="text" id="name" name="user_name" required=""/>
+            </li>
+            <li class="formsection">
+              <label for="mail">E-mail Address:</label><br>
+              <input type="email" id="mail" name="user_email"required="" />
+            </li>
+            <li class="formsection">
+              <label for="phone">Phone Number:</label><br>
+              <input type="phone" id="phone" name="user_phone" required=""/>
+            </li>
+            <li class="formsection">
+              <label for="rentaltype">Rental Type:</label>
+              <select id="rental-type" required="">
+                  <option value="Honda Metro Scooter">Honda Metro Scooter
+                  </option><option value="Honda Dio Scooter">Honda Dio Scooter
+                  </option><option value="Honda PCX150 Scooter">Honda PCX150 Scooter
+                  </option><option value="Honda Pioneer ATV">Honda Pioneer ATV
+                  </option><option value="Jeep Wrangler—4 door with a/c">Jeep Wrangler—4 door with a/c
+                  </option><option value="Jeep Wrangler—2 door">Jeep Wrangler—2 door
+              </option></select>
+            </li>
+            <li class="formsection">
+              <label for="rental_number">Number:</label><br>
+              <input type="number" id="rental_number" name="rental_number"  required=""/>
+            </li>
+            <li class="formsection">
+              <label for="date">Start Date:</label><br>
+              <input type="date" id="date" name="date" size="5" required=""/>
+            </li>
+            <li class="formsection">
+              <label for="rating">Period (0.5 to 10) Days:</label>
+              <input type="range" id="rating" value="0.5" min="0.5" max="10" step="0.5" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" required="">
+              <span id="ratingvalue">0.5</span> Days
+            </li>
+            <li class="formsection">
+              <label for="from">Country/Cruise line:</label><br>
+              <input type="text" id="from" name="from" />
+            </li>
+            <li class="formsection">
+              <label for="msg">Special requests/comments:</label><br>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li class="button">
+            <input class="btn-lg" type="submit" value="Report Storm">
+            </li>
+          </ul>
+        </form>
+
+      
+    </div>
+      <img class="order-right-img" src="images/home1.jpg" alt="Man riding a scooter">
+    </div>
+  </main>
+  <footer>
+    <div>
+        &copy;<span id="year"></span> | Ashton Pieterse | South Africa | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </div>
+        <div class="last_updated">Last Updated: <span  id="last_update"></span></div>
+    
+  </footer>
+  
+  <script src="scripts/main.js"></script>
+  <script src="scripts/reservation.js"></script>
+  </div>
+</body>
+
+</html>
+  

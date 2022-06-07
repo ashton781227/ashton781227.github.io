@@ -1,0 +1,51 @@
+@media only screen and (min-width: 70em) {
+
+
+    background-color: #906ef65d;
+    }
+
+	nav ul{
+   		border: 1px solid white;
+    
+	}
+
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+    .progressive {
+		grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 1.5rem;
+	}
+
+	.progressive picture:nth-child(3) {
+		grid-column: span 1;
+	}
+
+    .progressive p{
+	    display: block;
+}
+
+.cards {
+		grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 1.5rem;
+		
+	}
+	
+.cards img{
+	width:100%;
+}
+.progressive :hover {box-shadow: 0 0 50px #333;}
+}   
