@@ -64,15 +64,15 @@
             </li>
             <li class="formsection">
               <label for="mail">E-mail Address:</label><br>
-              <input type="email" id="mail" name="user_email"required="" />
+              <input type="email" id="mail" name="user_email" required="" />
             </li>
             <li class="formsection">
               <label for="phone">Phone Number:</label><br>
-              <input type="phone" id="phone" name="user_phone" required=""/>
+              <input type="phone" id="phone" name="user_phone" />
             </li>
             <li class="formsection">
               <label for="rentaltype">Rental Type:</label>
-              <select id="rental-type" required="">
+              <select id="rentaltype" >
                   <option value="Honda Metro Scooter">Honda Metro Scooter
                   </option><option value="Honda Dio Scooter">Honda Dio Scooter
                   </option><option value="Honda PCX150 Scooter">Honda PCX150 Scooter
@@ -91,7 +91,7 @@
             </li>
             <li class="formsection">
               <label for="rating">Period (0.5 to 10) Days:</label>
-              <input type="range" id="rating" value="0.5" min="0.5" max="10" step="0.5" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" required="">
+              <input type="range" id="rating" value="0.5" min="0.5" max="10" step="0.5" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" >
               <span id="ratingvalue">0.5</span> Days
             </li>
             <li class="formsection">
